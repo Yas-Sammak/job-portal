@@ -1,0 +1,19 @@
+<h2>Admin Dashboard</h2>
+
+
+<h3>Add Job</h3>
+<form (ngSubmit)="addJob()">
+
+  <div>
+    <label>Title</label>
+    <input type="text" formControlName="title">
+  </div>
+
+  <button type="submit">Add Job</button>
+</form>
+
+
+<h3>Jobs</h3>
+<ul>
+  <li *ngFor="let job of jobs">{{ job.title }}</li>
+</ul>

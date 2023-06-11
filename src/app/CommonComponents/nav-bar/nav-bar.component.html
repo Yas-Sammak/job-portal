@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <li><a routerLink="/admin">Admin</a></li>
+    <li><a routerLink="/jobs">Jobs</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="/logout">Logout</a></li>
+    <li *ngIf="!isLoggedIn"><a routerLink="/login">Login</a></li>
+  </ul>
+</nav>
+
